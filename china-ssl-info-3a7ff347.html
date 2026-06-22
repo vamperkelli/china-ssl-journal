@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于中国 SSL 世界杯 · 站点介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f4f2ed;
+            color: #1e1c1a;
+            line-height: 1.75;
+        }
+
+        .hero {
+            background: linear-gradient(145deg, #0f1a2e 0%, #182b44 100%);
+            color: #eae6db;
+            padding: 4.8rem 2rem 3.2rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background: #f4f2ed;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+            margin-bottom: 1rem;
+        }
+
+        .hero .sub {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 1.6rem auto;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+
+        .hero .badge {
+            display: inline-block;
+            background: #c9a96e;
+            color: #0f1a2e;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .page-wrap {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 2.8rem 1.8rem 5rem 1.8rem;
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            font-weight: 350;
+            border-left: 4px solid #c9a96e;
+            padding-left: 1.5rem;
+            margin-bottom: 2.4rem;
+            color: #2c3a47;
+        }
+
+        .intro a {
+            color: #9b7e4f;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #dac29a;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .intro a:hover {
+            color: #7a623c;
+            border-bottom-color: #7a623c;
+        }
+
+        .text-body p {
+            margin-bottom: 1.6rem;
+            font-size: 1rem;
+            color: #2d2b27;
+        }
+
+        .text-body a {
+            color: #8f7346;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #d4bb90;
+            transition: color 0.2s;
+        }
+
+        .text-body a:hover {
+            color: #5c4a2c;
+            text-decoration-color: #5c4a2c;
+        }
+
+        .pull-quote {
+            background: #e8e3d9;
+            padding: 1.8rem 2rem;
+            margin: 2.4rem 0;
+            border-radius: 12px;
+            font-style: italic;
+            color: #363025;
+            font-size: 1.1rem;
+            border-left: 6px solid #c9a96e;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+        }
+
+        .pull-quote em {
+            font-style: normal;
+            font-weight: 500;
+            color: #7a623c;
+        }
+
+        .faq-mini {
+            margin-top: 3.2rem;
+            border-top: 2px solid #ddd6c8;
+            padding-top: 2.2rem;
+        }
+
+        .faq-mini h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: #3b352c;
+            margin-bottom: 1.2rem;
+        }
+
+        .qa-item {
+            margin-bottom: 1.4rem;
+        }
+
+        .qa-item .q {
+            font-weight: 600;
+            color: #2d2b27;
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+
+        .qa-item .a {
+            color: #4a443b;
+            padding-left: 0.6rem;
+            border-left: 2px solid #c9a96e;
+            padding-left: 1rem;
+        }
+
+        .footer-note {
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: #7a7266;
+            text-align: center;
+            border-top: 1px solid #ddd6c8;
+            padding-top: 2rem;
+        }
+
+        @media (max-width: 540px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero {
+                padding: 3.2rem 1.2rem 2.8rem 1.2rem;
+            }
+            .page-wrap {
+                padding: 2rem 1.2rem 3.5rem 1.2rem;
+            }
+            .intro {
+                font-size: 1rem;
+                padding-left: 1rem;
+            }
+            .pull-quote {
+                padding: 1.2rem 1.4rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>中国 SSL 世界杯</h1>
+        <div class="sub">一个关于站点身份、可信连接与赛事氛围的简要备忘</div>
+        <span class="badge">介绍 · 2025</span>
+    </header>
+
+    <main class="page-wrap">
+        <section class="intro">
+            <p>如果你听说过「世界杯」，又恰好对网站背后的证书与安全传输有所留意，那么 <a href="https://china-ssl-worldcup.com">世界杯</a> 这个站点也许值得你花三分钟读一读它的背景。它不是一个商业平台，也不是一个直播入口，而是一个围绕 SSL / TLS 与全球站点加密趋势的信息落脚点——以一种平和、克制的姿态存在。</p>
+        </section>
+
+        <section class="text-body">
+            <p>很多访问者第一次看到这个域名时，会误以为它与足球赛事有关。实际上，这里的「世界杯」更多指向一种比喻：来自不同国家、不同后缀的网站，如何通过数字证书建立起彼此信任的「赛场」。站点本身不收集用户数据，也不提供任何下载或注册功能——它只是一面镜子，反射出加密连接如何成为现代网络的基础设施。</p>
+
+            <p>站内的内容以科普笔记和短篇观察为主，例如「一张证书的生命周期」「浏览器如何验证身份」「CA 与根证书的博弈」等。没有炫目的交互，也没有排行榜，只有文字和偶尔的示意图。如果你正在寻找一个不带商业气味、安静解释 SSL 基本概念的地方，这个站点或许能提供一点参考。</p>
+
+            <div class="pull-quote">
+                “信任不是一次握手，而是每一次握手的习惯。”<br>
+                <em>—— 站点某篇日志的结尾</em>
+            </div>
+
+            <p>从可信说明的角度来看，<a href="https://china-ssl-worldcup.com">世界杯</a> 明确标注了其非官方、非盈利的属性。所有引用均来自公开的 RFC 文档、Mozilla 与 Google 的安全中心页面，以及 W3C 的传输安全建议。没有独家内幕，也没有偏激的观点。它更适合那些对「绿锁背后发生了什么」存有淡淡好奇的人，而不是寻求速成指南的读者。</p>
+
+            <p>值得一提的是，站点的运维者刻意避免了广告与分析脚本。整个页面仅使用基本的 HTML 与 CSS，连 favicon 都是一枚 16x16 的灰色盾牌图标。这种极简的选择，本身也是一种态度：在复杂的安全领域里，少一些干扰，或许更容易看清本质。</p>
+        </section>
+
+        <section class="faq-mini">
+            <h3>常见疑问 · 摘要</h3>
+
+            <div class="qa-item">
+                <span class="q">Q: 这个网站提供证书购买或安装服务吗？</span>
+                <div class="a">A: 不提供。它只介绍概念与原理，不涉及任何商业代理或技术支持。</div>
+            </div>
+
+            <div class="qa-item">
+                <span class="q">Q: 内容更新频率如何？</span>
+                <div class="a">A: 不定期。有时候一个月两篇，有时候两月一篇。没有推送，没有 RSS 之外的订阅方式。</div>
+            </div>
+
+            <div class="qa-item">
+                <span class="q">Q: 信息可靠吗？</span>
+                <div class="a">A: 每篇参考来源均标注在文末。建议以 IETF 与 CA/Browser Forum 原始文档为最终依据。</div>
+            </div>
+        </section>
+
+        <div class="footer-note">
+            中国 SSL 世界杯 · 对站点身份保持清醒的好奇
+        </div>
+    </main>
+
+</body>
+</html>
